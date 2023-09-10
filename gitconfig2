@@ -1,0 +1,29 @@
+[color]
+	ui = true
+[user]
+	name = Rondy Sousa
+	email = rondysousa@email.com
+[init]
+	defaultBranch = main
+[core]
+  editor = subl -n -w
+[pull]
+  rebase = true
+[alias]
+  co = checkout
+  br = branch
+  ci = commit
+  d = diff
+  dc = diff --cached
+  ca = commit --amend
+  cah = ci --amend -C HEAD
+  st = status
+  l = log --oneline
+  lg = log --pretty='%C(red)%h%Creset%C(yellow)%d%Creset %s %C(cyan)(%ar)%Creset'
+  lgg = log --format='%C(red)%h%Creset%C(yellow)%d%Creset %C(cyan)%s%Creset %C(dim white)(%ar)%Creset%n%w(72,4,4)%b'
+[merge]
+	ff = no
+[commit]
+	# gpgsign = true
+[push]
+	autoSetupRemote = true
